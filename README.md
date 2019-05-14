@@ -14,7 +14,7 @@ This is my implementation of Udacity Blockchain Developer Nanodegree - Project 5
 - Transaction hash: `0xc0b3dbcf965ff2aaa63f1a5ff4f5204a2195b5e28473381dfdc317f6bc303838`
 - Contract address: `0x62b44bb77A6FE6E7DaB6bB64a51b26C43d1Fb9e4`
 
-### Requirements
+## Requirements
 
 - [`yarn`](https://yarnpkg.com/)
 - [`truffle`](https://truffleframework.com/truffle)
@@ -39,3 +39,16 @@ yarn run dev
 ```
 
 Then with your browser go to the address indicated by webpack.
+
+## Deploying to the Rinkeby network
+
+In order to be able to deploy this contract to the Rinkeby test network, you first **MUST** create a file named `.secret` at the root of this project.
+
+This file should contain your Metamask seed.
+
+Then run:
+
+```
+truffle compile
+truffle migrate --reset --network rinkeby
+```
