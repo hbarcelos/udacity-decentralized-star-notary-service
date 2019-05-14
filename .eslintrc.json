@@ -1,0 +1,38 @@
+{
+  "env": {
+    "browser": true,
+    "es6": true,
+    "node": true,
+    "jquery": true,
+    "mocha": true
+  },
+  "extends": [
+    "standard",
+    "plugin:security/recommended",
+    "plugin:prettier/recommended"
+  ],
+  "globals": {
+    "Atomics": "readonly",
+    "SharedArrayBuffer": "readonly",
+    "contract": true,
+    "artifacts": true,
+    "assert": true,
+    "web3": true
+  },
+  "parserOptions": {
+    "ecmaFeatures": {
+      "jsx": true
+    },
+    "ecmaVersion": 2018,
+    "sourceType": "module"
+  },
+  "plugins": [
+    "security",
+    "standard",
+    "prettier",
+    "jest",
+    "node",
+    "promise"
+  ],
+  "rules": {}
+}
